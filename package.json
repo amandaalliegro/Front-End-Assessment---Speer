@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/amandaalliegro/Front-End-Assessment---Speer/issues"
   },
-  "homepage": "https://github.com/amandaalliegro/Front-End-Assessment---Speer#readme"
+  "homepage": "https://github.com/amandaalliegro/Front-End-Assessment---Speer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

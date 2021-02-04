@@ -464,6 +464,12 @@ ul {
   transform: rotate(65deg);
 }
 
+#stars{
+  color:black;
+  font-size: 22px;
+  letter-spacing: 5px;
+  
+}
 .title-box-white {
   padding-top: 0px;
   color:rgb(255, 255, 255);;
@@ -483,7 +489,7 @@ ul {
   display: flex;
 }
 .container-blue-marine {
-  padding: 40px;
+  padding-left: 100px;
   width: 900px;
   justify-content: space-around;
 }

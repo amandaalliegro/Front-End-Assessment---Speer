@@ -1,122 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-.slider {
+.plans-container {
   width: 100%;
   height: 100%;
   background-color: rgb(25, 25, 25);
   font-family: 'Work Sans', sans-serif;
 }
-.container-slider {
+.container {
   display:block;
   padding: 90px;
-  align-content: center;
   font-family: 'Work Sans', sans-serif;
 }
 #pricing {
   display: block;
   color: white;
 }
-#app-ttl {
+#pricing-ttl {
   padding-left: 90px;
-  padding-right: 0px;
   font-size: 40px;
   font-weight: 600;
-  text-align: center;
 }
-.app-txt {
-  padding-left: 370px;
-  padding-right: 370px;
-  font-size: 18px;
-  
-  text-align: center;
-  align-items: center;
-  
+.pricing-txt {
+  padding-left: 90px;
+  font-size: 24px;
 }
-.btn-slider{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-[class*="try-btn"] {
-  outline: 0;
-  border-radius: 50px;
-  font-size: 0.8em;
-  font-family: 'Work Sans', sans-serif;
-  color:#222;
-  font-weight: 600;
-  letter-spacing: 4px;
-  overflow: hidden;
-  position: relative;
-  padding: 2em 3em;
-  margin: 4em;
-  text-transform: uppercase;
-  -webkit-tap-highlight-color: transparent;
-  transition: all 500ms ease-in-out;
-}
-[class*="try-btn"]::after, [class*="btn-"]::before {
-  content: "";
-  position: absolute;
-}
-[class*="try-btn"]:hover, [class*="btn-"]:focus {
-  background: rgba(24, 144, 214, 0.8);
-}
-[class*="try-btn-mix"]::after {
-  background: #222;
-  border-radius: 120px;
-  content: attr(data-text);
-  color: rgb(15, 15, 15);
-  padding: 1.6em 2.5em;
-  top: 0.4em;
-  left: 0.5em;
-  -moz-user-select: none;
-  user-select: none;
-  user-drag: none;
-}
-[class*="try-btn-mix"]::before {
-  background: transparent;
-  border-radius: 100%;
-  top: 50%;
-  left: 50%;
-  box-shadow: 0 1em 2em 3em rgba(11, 175, 240, 0.5), 4em 0em 2em 2em rgba(93, 0, 155, 0.6), -4em -2em 2em 2em rgba(255, 0, 150, 0.5), -4em 2em 2em 4em rgba(235, 7, 26, 0.5), 0 -3em 2em 3em rgba(250, 121, 0, 0.5), 2em -1em 2em 2em rgba(240, 205, 9, 0.5);
-  width: 0;
-  height: 0;
-  animation: mix 5s linear infinite;
-}
-@keyframes mix {
-  40% {
-    box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5), 4em -1em 2em 3em rgba(255, 50, 0, 0.8), -4em 2em 3em 2em rgba(155, 200, 0, 0.5), -4em -2em 2em 2em rgba(200, 0, 150, 0.6), 0 3em 2em 2em rgba(20, 250, 0, 0.5), 2em 1em 2em 2em rgba(50, 10, 250, 0.5);
- }
-  70% {
-    box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5), 3em 1em 2em 3em rgba(25, 150, 0, 0.6), 3em -2em 3em 3em rgba(155, 200, 0, 0.5), -4em 2em 2em 3em rgba(200, 0, 50, 0.6), 0 -3em 2em 3em rgba(200, 250, 0, 0.5), -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
- }
-}
-.try-btn-mix-noborder::after {
-  background: transparent !important;
-  color: #222 !important;
-}
-
 .boxes {
   display: flex;
   justify-content: space-around;
 }
-.sound-box {
+.box {
   display:block;
   justify-content: flex-start;
   align-content: flex-start;
 }
 
-#sound-ttl {
+.plan-ttl {
   color: rgb(195, 82, 77);
   font-size: 22px;
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
+.plan-ttl-period {
+  color: rgb(195, 82, 77);
+  font-size: 28px;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
 
-
-
-
-
+}
+.plan-ttl-price {
+  color: rgb(195, 82, 77);
+  font-size: 72px;
+  font-weight: 600;
+  padding: 0;
+  height: 38px;
+  margin-block-end: 1.1em;
+}
+#red-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  
+  border-top: 2px solid rgb(195, 82, 77);
+  color: rgb(195, 82, 77);
+  background-color: rgb(195, 82, 77);
+  width: 1.8cm;
+}
+#yellow-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  border-top: 2px solid rgb(244, 181, 87);
+  width: 1.8cm;
+  color:rgb(244, 181, 87);
+}
+#blue-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  border-top: 2px solid rgb(105, 222, 231);
+  width: 1.8cm;
+  color:rgb(105, 222, 231);
+  
+}
+#fnt-yellow {
+  color:rgb(244, 181, 87);
+}
+#fnt-blue {
+  color:rgb(105, 222, 231);
+}
+#fnt-white {
+  color: rgb(218,218,218);
+  font-size: 26px;
+  font-weight: 400;
+}
 .select-btn {
   border-radius: 2.5rem;
   border: 0;

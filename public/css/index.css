@@ -392,6 +392,15 @@ ul {
   margin-block-end: 0.3em;
 }
 
+#btn-try-right-mix {
+  padding-left: 80%;
+  padding-top: 5%;
+}
+
+#tryIt-btn-mix {
+  width: 180px;
+}
+
 .blue {
   width: 100%;
   height: 200px;

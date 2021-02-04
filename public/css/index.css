@@ -17,18 +17,18 @@
   color: white;
 }
 #app-ttl {
-  padding-left: 90px;
-  padding-right: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 600;
   text-align: center;
 }
 .app-txt {
-  padding-left: 370px;
-  padding-right: 370px;
+  padding-left: 270px;
+  padding-right: 270px;
   font-size: 18px;
-  
+  letter-spacing: 3px;
   text-align: center;
   align-items: center;
   
@@ -298,6 +298,98 @@ ul {
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
   
+}
+.black {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 26, 26);
+  font-family: 'Work Sans', sans-serif;
+}
+.container-black {
+padding: 90px;
+}
+
+
+
+.title-box {
+  padding-left: 50px;
+  padding-top: 3px;
+  color:white;
+  letter-spacing: 4px;
+  font-size: 44px;
+  font-weight: 500;
+  height: 90px;
+}
+.box-benefits {
+  padding-top: 35px;
+  display: block;
+  width: 195px;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+#box-benefits-red {
+  color: rgb(195, 82, 77);
+}
+#box-benefits-yellow {
+  color: rgb(244, 181, 87);
+}
+#box-benefits-blue {
+  color: rgb(105, 222, 231);
+}
+#bnf-blue-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  color: rgb(105, 222, 231);
+  background-color: rgb(105, 222, 231);
+  border-top: 2px solid rgb(105, 222, 231);
+  width: 1.4cm;
+}
+#bnf-red-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  color:rgb(195, 82, 77);
+  background-color: rgb(195, 82, 77);;
+  border-top: 2px solid rgb(195, 82, 77);
+  width: 1.4cm;
+}
+
+#bnf-yellow-line {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: auto;
+  border-style: inset;
+  color: rgb(244, 181, 87);
+  background-color:rgb(244, 181, 87); 
+  border-top: 2px solid rgb(244, 181, 87);
+  width: 1.4cm;
+}
+
+ul {
+  list-style-type: "♪ ";
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 3px;
+}
+.benefits-txt-white {
+  color:rgb(255, 254, 254);
+  font-size: 20px;
+  font-weight: 400;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.3em;
 }
 
 .blue {

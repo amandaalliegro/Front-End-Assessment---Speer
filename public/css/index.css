@@ -20,6 +20,7 @@
   padding-left: 90px;
   padding-right: 0px;
   font-size: 40px;
+  letter-spacing: 4px;
   font-weight: 600;
   text-align: center;
 }
@@ -136,6 +137,7 @@ main{
   color: rgb(255, 255, 255);
   font-size: 44px;
   font-weight: 700;
+  letter-spacing: 4px;
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
 }
@@ -281,6 +283,7 @@ ul {
 #front-ttl {
   color: rgb(255, 255, 255);
   font-size: 44px;
+  letter-spacing: 4px;
   font-weight: 700;
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;

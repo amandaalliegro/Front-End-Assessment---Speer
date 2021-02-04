@@ -42,8 +42,9 @@
   outline: 0;
   border-radius: 50px;
   font-size: 0.8em;
+  background: rgba(4, 23, 107, 0.8);
   font-family: 'Work Sans', sans-serif;
-  color:#222;
+  color:rgb(255, 255, 255);
   font-weight: 600;
   letter-spacing: 4px;
   overflow: hidden;
@@ -59,13 +60,13 @@
   position: absolute;
 }
 [class*="try-btn"]:hover, [class*="btn-"]:focus {
-  background: rgba(24, 144, 214, 0.8);
+  background: rgba(83, 2, 94, 0.8);
 }
 [class*="try-btn-mix"]::after {
   background: #222;
   border-radius: 120px;
   content: attr(data-text);
-  color: rgb(15, 15, 15);
+  color: rgb(255, 255, 255);
   padding: 1.6em 2.5em;
   top: 0.4em;
   left: 0.5em;

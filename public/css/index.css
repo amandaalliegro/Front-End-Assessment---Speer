@@ -160,6 +160,12 @@
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
 }
+ul {
+  list-style-type: "♪ ";
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 3px;
+}
 .benefits-txt {
   color:rgb(25, 25, 25);
   font-size: 18px;
@@ -202,6 +208,6 @@
   bottom: 0px;
   height: 100%;
   
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   background-color: rgb(87, 60, 201);
 }

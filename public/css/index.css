@@ -126,8 +126,8 @@ main{
   display:block;
   justify-content: flex-start;
   align-content: flex-start;
-  padding-left: 150px;
-  padding-top: 190px;
+  padding-left: 180px;
+  padding-top: 160px;
   width: 800px;
   height: 500px
 }
@@ -168,10 +168,24 @@ main{
   border-color: white;
   color: rgb(187, 37, 29);
 }
+#sel-white-float {
+  width: 120px;
+  top:0;
+  right:0;
+  position:relative;
+  font-weight: 700;
+  background-color: white;
+  border-color: white;
+  color: rgb(187, 37, 29);
+}
+#btn-try-right {
+  padding-left: 87%;
+  padding-top: 5%;
+}
 .sound-img {
   background-color: rgb(195, 82, 77);
-  padding-top: 80px;
   padding-left: 80px;
+  
 }
 #sound{
  

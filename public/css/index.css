@@ -1,4 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+/* Style the button that is used to open and close the collapsible content */
+
+@keyframes grow {
+  0% { font-size: 0; }
+  100% { font-size: 40px; }
+}
+#collapsible-menu{
+  display: none;
+  height: 330px;
+  width:330px;
+  border-radius : 100%;
+  background-color: black;
+  float:left;
+  color:white;
+  position:absolute;
+  animation:ease-in;
+  transition: ease-in 4s;
+  z-index: 0;
+  
+}
+#collapsible-btn{
+  z-index: 10;
+  height: 60px;
+  width:fit-content;
+  border-radius: 100%;
+  background-color: transparent;
+  position: fixed;
+  color:white;
+  font-size: 40px;
+}
+
+.menu-txt {
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 28%;
+  padding-top: 45%;
+  color:white;
+  text-transform:uppercase
+}
+
+#menu-color {
+  color: white;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
 .slider {
   width: 100%;

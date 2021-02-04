@@ -62,7 +62,8 @@
   margin-left: 0;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
+  
+  border-top: 2px solid rgb(195, 82, 77);
   color: rgb(195, 82, 77);
   background-color: rgb(195, 82, 77);
   width: 1.8cm;
@@ -74,7 +75,7 @@
   margin-left: 0;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
+  border-top: 2px solid rgb(244, 181, 87);
   width: 1.8cm;
   color:rgb(244, 181, 87);
 }
@@ -85,7 +86,7 @@
   margin-left: 0;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
+  border-top: 2px solid rgb(105, 222, 231);
   width: 1.8cm;
   color:rgb(105, 222, 231);
   
@@ -168,28 +169,39 @@
 }
 .blue {
   width: 100%;
-  height: 100%;
+  height: 200px;
   background-color: rgb(87, 60, 201);
   font-family: 'Work Sans', sans-serif;
 }
+
 #contact {
   font-size: 20px;
   color: white;
   font-weight: 400;
-  margin-block-start: 0.1em;
+  padding-left: 90px;
+  padding-top: 20px;
   font-stretch: expanded;
   font-family: 'Work Sans', sans-serif;
 }
 #brand {
   display: block;
-  align-self: center;
+  align-self: flex-end;
   justify-self: center;
   color: white;
   font-size: 30px;
   padding-left: 25%;
+  bottom: 0;
+  padding-top: 35px;
+  margin-block-end: 0.3em;
 }
 
 #footer {
+  position: relative;
   color: white;
-  padding-left: 31%;
+  padding-left: 35%;
+  bottom: 0px;
+  height: 100%;
+  
+  padding-bottom: 10px;
+  background-color: rgb(87, 60, 201);
 }

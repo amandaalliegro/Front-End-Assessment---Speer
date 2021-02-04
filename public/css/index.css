@@ -401,6 +401,37 @@ ul {
   width: 180px;
 }
 
+.boxes-container {
+  display:flex;
+  justify-content: space-around;
+  padding-top: 90px;
+}
+
+#btn-try-center-mix{
+  padding-left: 0%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.title-box-red {
+  padding-left: 50px;
+  padding-top: 50px;
+  color:rgb(195, 82, 77);;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 600;
+  height: 90px;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+#txt-black{
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 50px;
+}
+
 .blue {
   width: 100%;
   height: 200px;

@@ -34,7 +34,7 @@ html {
 }
 
 .menu-txt {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   padding-left: 28%;
   padding-top: 45%;
@@ -598,10 +598,76 @@ ul {
 #footer {
   position: relative;
   color: white;
-  padding-left: 35%;
+  padding-left: 37%;
   bottom: 0px;
   height: 100%;
   
   padding-bottom: 40px;
   background-color: rgb(87, 60, 201);
 }
+
+
+.select-btn-white {
+  border-radius: 2.5rem;
+  border: 0;
+  font-size: 13px;
+  height: 45px;
+  line-height: 1.2rem;
+  margin-right: 1rem;
+  width: 18rem;
+  padding: 1em 2em;
+  border-style: solid;
+ 
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+
+.button {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+.select-btn-white::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  
+  background: radial-gradient(circle closest-side, #060d50,#4f06af,#660e3a, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.select-btn-white span {
+  position: relative;
+  pointer-events: none;
+}
+
+.select-btn-white:hover::before {
+  --size: 400px;
+  
+}
+

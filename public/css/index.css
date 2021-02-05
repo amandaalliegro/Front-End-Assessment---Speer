@@ -282,6 +282,11 @@ ul {
   border: none;
   font-weight: 600;
 }
+.img-bckgrnd{
+  background-image: url('../assets/dave-grohl-cropped.jpg');
+  z-index: 100;
+}
+
 .front-row-container{
   display:flex;
   justify-content: flex-end;
@@ -289,13 +294,19 @@ ul {
   padding-left: 100px;
   padding-top: 100px;
   width: 100%;
-  height: 600px
+  height: 600px;
+  background-color: rgb(244, 181, 87);
+  
 }
 .front-box{
   padding: 20px;
 }
 #front-box-double-img {
   background-color: rgb(26, 25, 25);
+  background-image: url('../assets/dave-grohl-cropped.jpg');
+  background-size: 67%;
+  background-position: 18% 5% 18%  ;
+  background-attachment: fixed;
   height: 350px;
   width: 350px;
   border-radius: 100%;
@@ -306,7 +317,11 @@ ul {
   position:relative;
 }
 #front-box-double-img-scd {
-  background-color: rgb(26, 25, 25);
+  background-color: transparent;
+  background-image: url('../assets/dave-grohl-cropped.jpg');
+  background-size: 67%;
+  background-position: 18% 5% 18% ;
+  background-attachment: fixed;
   height: 210px;
   width: 210px;
   border-radius: 50%;
@@ -316,13 +331,18 @@ ul {
   position:absolute;
 }
 #front-box-single-img {
-  background-color: rgb(26, 25, 25);
+  background-color: transparent;
+  background-image: url('../assets/dave-grohl-cropped.jpg');
+  background-size: 450%;
+  background-position: 90% 67% ;
+  background-attachment: relative;
+  background-repeat: no-repeat;
   height: 250px;
   width: 250px;
-  border-top-left-radius: 100%;
+  border-top-left-radius: 95%;
   margin-left: 0;
   margin-bottom:0;
-  margin-top: 24%;
+  margin-top: 22.8%;
   
 }
 
@@ -671,3 +691,28 @@ ul {
   
 }
 
+
+.cursor {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+.cursor-inner {
+  border: 1px solid #000;
+  height: 60px;
+  width: 60px; 
+  transform: translate(-50%, -50%);
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  transition: all 360ms cubic-bezier(.23,1,.32,1);
+}
+
+.cursor.cursor--focused .cursor-inner { 
+  height: 90px; width: 90px; 
+}

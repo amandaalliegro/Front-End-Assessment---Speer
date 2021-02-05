@@ -1,5 +1,6 @@
 $(function () {
   
+  
   let click = 0;
 
   $('#collapsible-btn').click(function(){

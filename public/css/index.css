@@ -90,7 +90,7 @@ html {
 [class*="try-btn"] {
   outline: 0;
   border-radius: 50px;
-  font-size: 0.8em;
+  font-size: 1.1em;
   background: rgba(4, 23, 107, 0.8);
   font-family: 'Work Sans', sans-serif;
   color:rgb(255, 255, 255);
@@ -610,11 +610,11 @@ ul {
 .select-btn-white {
   border-radius: 2.5rem;
   border: 0;
-  font-size: 13px;
+  font-size: 12px;
   height: 45px;
   line-height: 1.2rem;
   margin-right: 1rem;
-  width: 18rem;
+  width: 22rem;
   padding: 1em 2em;
   border-style: solid;
  

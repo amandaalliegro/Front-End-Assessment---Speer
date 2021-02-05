@@ -46,22 +46,11 @@ html {
   color: white;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
 
 .slider {
   width: 100%;
-  height: 100%;
+  height: 768px;
   background-color: rgb(25, 25, 25);
   font-family: 'Work Sans', sans-serif;
 }
@@ -170,7 +159,7 @@ main{
 }
 .red {
   width: 100%;
-  height: 100%;
+  height: 768px;
   background-color: rgb(195, 82, 77);
   font-family: 'Work Sans', sans-serif;
   margin-block-start:0;
@@ -180,6 +169,7 @@ main{
   display: flex;
   width: auto;
   height: 100%;
+  
 }
 
 .sound-box {
@@ -189,7 +179,7 @@ main{
   padding-left: 180px;
   padding-top: 160px;
   width: 800px;
-  height: 500px
+  height: 100%;
 }
 
 #sound-ttl {
@@ -244,14 +234,13 @@ main{
   padding-left: 87%;
   padding-top: 5%;
 }
-.sound-img {
-  background-color: rgb(195, 82, 77);
-  padding-left: 80px;
-  
-}
+
 #sound{
+  margin-top: 80px;
+  margin-left: 40px;
   cursor:pointer;
-  height: 340px;
+  height: 400px;
+  
   width: auto;
   -webkit-filter: drop-shadow(10px 10px 10px #222);
   filter: drop-shadow(6px 12px 20px #0a0a0a);
@@ -273,7 +262,7 @@ ul {
 
 .yellow {
   width: 100%;
-  height: 100%;
+  height: 768px;
   background-color: rgb(244, 181, 87);
   font-family: 'Work Sans', sans-serif;
 }
@@ -333,7 +322,7 @@ ul {
   border-top-left-radius: 100%;
   margin-left: 0;
   margin-bottom:0;
-  margin-top: 18.9%;
+  margin-top: 24%;
   
 }
 
@@ -360,7 +349,7 @@ ul {
 }
 .black {
   width: 100%;
-  height: 100%;
+  height: 768px;
   background-color: rgb(26, 26, 26);
   font-family: 'Work Sans', sans-serif;
 }
@@ -372,7 +361,6 @@ padding: 90px;
 
 .title-box {
   padding-left: 50px;
-  padding-top: 3px;
   color:white;
   letter-spacing: 4px;
   font-size: 44px;
@@ -380,7 +368,7 @@ padding: 90px;
   height: 90px;
 }
 .box-benefits {
-  padding-top: 35px;
+  padding-top: 3px;
   display: block;
   width: 195px;
   color: white;
@@ -453,7 +441,7 @@ ul {
 
 #btn-try-right-mix {
   padding-left: 80%;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 
 #tryIt-btn-mix {
@@ -501,7 +489,7 @@ ul {
 
 .blue-marine {
   width: 100%;
-  height: 100%;
+  height: 768px;
   background-color: rgb(105, 222, 231);
   font-family: 'Work Sans', sans-serif;
 }
@@ -552,9 +540,22 @@ ul {
 }
 .container-blue-marine {
   padding-left: 100px;
+  padding-top: 15%;
   width: 900px;
   justify-content: space-around;
+
+
 }
+
+.title-box-marine {
+  padding-left: 30px;
+  color:white;
+  letter-spacing: 4px;
+  font-size: 44px;
+  font-weight: 500;
+  height: 90px;
+}
+
 #sel-white-blue-float {
   width: 120px;
   top:0;

@@ -250,7 +250,7 @@ main{
   
 }
 #sound{
- 
+  cursor:pointer;
   height: 340px;
   width: auto;
   -webkit-filter: drop-shadow(10px 10px 10px #222);

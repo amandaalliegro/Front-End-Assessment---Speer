@@ -1,5 +1,5 @@
 $(function () {
-
+  
   let click = 0;
 
   $('#collapsible-btn').click(function(){
@@ -21,38 +21,50 @@ $(function () {
   })
 });
 
+(function () {
+  let state;
+  let source = {}; 
+  const URL = 'https://mp3trial.s3-sa-east-1.amazonaws.com/music.mp3';
+  //const URL = $('#sound-address').val();
+  console.log(URL)
+    
+  const context = new AudioContext();
+  const playButton = document.querySelector('#play');
+    
+  let yodelBuffer;
 
-const AudioContext = window.AudioContext || window.webkitAudioContext;
+  window.fetch(URL)
+    .then(response => response.arrayBuffer())
+    .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
+    .then(audioBuffer => {
+      playButton.disabled = false;
+      yodelBuffer = audioBuffer;
+    });
+    
+    playButton.onclick = () => play(yodelBuffer);
 
-const audioContext = new AudioContext();
-
-// get the audio element
-const audioElement = document.querySelector('audio');
-
-// pass it into the audio context
-const track = audioContext.createMediaElementSource(audioElement);
-
-/ select our play button
-const playButton = document.querySelector('button');
-
-playButton.addEventListener('click', function() {
-
-    // check if context is in suspended state (autoplay policy)
-    if (audioContext.state === 'suspended') {
-        audioContext.resume();
+  function play(audioBuffer) {
+    
+    
+   
+   
+   console.log(state)
+    if (state === 'running') {
+     
+      context.suspend();
+      state = source.context.state;
+    } else if (state === 'suspended') {
+      context.resume();
+      state = source.context.state;
+    } else { 
+      source = context.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(context.destination);
+      source.start();
+      state = source.context.state;
     }
+    
+    console.log(source.context)
 
-    // play or pause track depending on state
-    if (this.dataset.playing === 'false') {
-        audioElement.play();
-        this.dataset.playing = 'true';
-    } else if (this.dataset.playing === 'true') {
-        audioElement.pause();
-        this.dataset.playing = 'false';
-    }
-
-}, false);
-
-audioElement.addEventListener('ended', () => {
-  playButton.dataset.playing = 'false';
-}, false);
+  }
+}());

@@ -1,31 +1,28 @@
-# TinyApp Project
+# Front-end-Assessment
 
-TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).
+This project was build as an assessment to Speer following the present directions: https://miro.com/app/board/o9J_lWzLOeE=/?moveToWidget=3074457353832446689&cot=14;
 
-## Final Product
-Re-styled home-page:
-!['my urls'](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/new-home.png?raw=true)
-Re-styled login page:
-!['login'](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/new-login.png?raw=true)
-Re-styled create new url page:
-!['create-urls'](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/new-create.png?raw=true)
-Re-styled edit page:
-!['edit'](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/new-edit1.png?raw=true)
-Re-styled my urls:
-!['my urls'](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/new-myurls.png?raw=true)
 
-Below you will find the very first design of this project:
-!["My URLs"](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/myURLs.png?raw=true)
-!["Login"](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/login.png?raw=true)
-!["Create Tiny URL"](https://github.com/amandaalliegro/tinyapp_1/blob/master/docs/createTinyURL.png?raw=true)
+
+## Some images from the Final Product
+
+!['my urls'](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.45.38%20AM.png?raw=true)
+
+!['login'](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.45.51%20AM.png?raw=true)
+
+!['create-urls'](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.46.05%20AM.png?raw=true)
+
+!['edit'](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.46.16%20AM.png?raw=true)
+
+!['my urls'](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.46.33%20AM.png?raw=true)
+
+
+!["My URLs"](https://github.com/amandaalliegro/Front-End-Assessment---Speer/blob/master/docs/Screen%20Shot%202021-02-05%20at%209.46.44%20AM.png?raw=true)
+
 ## Dependencies
 
-- Node.js
-- Express
-- EJS
-- bcrypt
-- body-parser
-- cookie-session
+- EJS;
+- Express;
 
 ## Getting Started
 

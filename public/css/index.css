@@ -36,7 +36,7 @@ html {
   -moz-animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
   behavior: smooth;
-  
+  z-index: 5;
   
   transition: 10s;
   
@@ -62,12 +62,17 @@ html {
   height: 768px;
   background-color: rgb(25, 25, 25);
   font-family: 'Work Sans', sans-serif;
+  position: relative;
 }
 .container-slider {
   display:block;
   padding: 90px;
   align-content: center;
   font-family: 'Work Sans', sans-serif;
+  position: absolute;
+  z-index: 1000;
+  top: 35%;
+  text-shadow: black;
 }
 #pricing {
   display: block;
@@ -80,6 +85,9 @@ html {
   letter-spacing: 4px;
   font-weight: 600;
   text-align: center;
+  z-index: 10;
+  -webkit-filter: drop-shadow(18px 10px 10px #222);
+  filter: drop-shadow(20px 0px 15px #0a0a0a);
 }
 .app-txt {
   padding-left: 270px;
@@ -88,12 +96,16 @@ html {
   letter-spacing: 3px;
   text-align: center;
   align-items: center;
+  z-index: 10;
+  -webkit-filter: drop-shadow(40px 40px 40px #222);
+  filter: drop-shadow(70px 2px 10px #0a0a0a);
   
 }
 .btn-slider{
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 [class*="try-btn"] {
@@ -161,12 +173,20 @@ html {
 }
 
 
-
-
 main{
   background-color:rgb(195, 82, 77);
 }
-.red {
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.fade-in-red {
   width: 100%;
   height: 768px;
   background-color: rgb(195, 82, 77);
@@ -174,7 +194,7 @@ main{
   margin-block-start:0;
   margin-block-end:0;
 }
-.container-sound{
+.fade-in-container-sound{
   display: flex;
   width: auto;
   height: 100%;

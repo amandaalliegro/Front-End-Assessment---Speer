@@ -31,23 +31,24 @@
     
     <%- include ('./partials/menu.ejs') %>
     <section class='slider'>
-      
-        <div class='container-slider'>
-          <div id='pricing'>
-            <h1 id='app-ttl'>INTERACTIVE CONCERT EXPERIENCE</h1>
-            <p class='app-txt'>Experience your favorite artists like never before and from the comfort of your own home</p> 
-          </div>
-          <div class='btn-slider'>
-            <form action="/tryit" method="get" target="_blank">
-            <button type='submit' class='try-btn-mix-noborder' id='tryIt-btn-multi-color-slider'> 
-              <span>TRY IT NOW</span>
-            </button>
-          </form>
-          </div>
-        </div>    
+      <div class='container-slider'>
+        <div id='pricing'>
+          <h1 id='app-ttl'>INTERACTIVE CONCERT EXPERIENCE</h1>
+          <p class='app-txt'>Experience your favorite artists like never before and from the comfort of your own home</p> 
+        </div>
+        <div class='btn-slider'>
+          <form action="/tryit" method="get" target="_blank">
+          <button type='submit' class='try-btn-mix-noborder' id='tryIt-btn-multi-color-slider'> 
+            <span>TRY IT NOW</span>
+          </button>
+        </form>
+        </div>
+      </div>    
+      <%- include ('./partials/carousel.ejs') %>
+        
     </section>
     
-    <section class='red'>
+    <section class='fade-in-red'>
       <div id='btn-try-right'>
         <form action="/tryit" method="get" target="_blank">
         <button type='submit' class='select-btn-white' id='sel-white-float'> 
@@ -55,7 +56,7 @@
         </button>
       </form>
       </div>
-        <div class='container-sound'>
+        <div class='fade-in-container-sound'>
           <div class='sound-box'>
             <h1 id='sound-ttl'>SUPERIOR SOUND</h1>
             <p id='sound-txt'>Experience live versions of your favourite songs</p>
@@ -200,6 +201,7 @@
   </main>
   <script src="js/scripts.js"></script>
   <script src='/static/css/helper.js'></script>
+  <script src='/static/css/smoothScrolling.js'></script>
   <script src='/static/css/customCursor.js'></script>
 
 </body>

@@ -28,19 +28,10 @@
 
 <body>
   <main>
-    <div class="cursor">
-      <div class="cursor-inner"></div>
-    </div>
     
+    <%- include ('./partials/menu.ejs') %>
     <section class='slider'>
-      <div class="collapsible" id='collapsible-btn'>&#9776 EXP|CON
-        <div class="content" id='collapsible-menu'>
-          <div class='menu-txt'>
-          <p id='menu-color'>What is it</p>
-          <p>Perks pricing</p>
-        </div>
-        </div>
-    </div>
+      
         <div class='container-slider'>
           <div id='pricing'>
             <h1 id='app-ttl'>INTERACTIVE CONCERT EXPERIENCE</h1>
@@ -205,20 +196,7 @@
        
     </section>
 
-    <section class='blue'>
-        <div class='container-botton'>
-          <div class='contact-box' id='contact'>
-            <p id='contact'> <span class="glyphicon glyphicon-envelope">  support@experienceconcerts.co</span></p>
-          </div>
-          <div id='brand'>
-            <p id='brand'>EXP|CON</p>
-          </div>
-          
-        </div>
-          
-        
-    </section>
-    <footer id='footer'>2019 All Rights Reserved | Speer Technologies Incorporated</footer>
+    <%- include ('./partials/footer.ejs') %>
   </main>
   <script src="js/scripts.js"></script>
   <script src='/static/css/helper.js'></script>

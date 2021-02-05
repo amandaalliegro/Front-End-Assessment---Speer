@@ -19,6 +19,7 @@
 <body>
   <main>
     <section class='plans-container'>
+      <%- include ('./partials/menu.ejs') %>
         <div class='container'>
           <div id='pricing'>
             <h1 id='pricing-ttl'>PRICING</h1>
@@ -107,21 +108,10 @@
         </div>
         </div>
     </section>
-    <section class='blue'>
-        <div class='container-botton'>
-          <div class='contact-box' id='contact'>
-            <p id='contact'> <span class="glyphicon glyphicon-envelope">  support@experienceconcerts.co</span></p>
-          </div>
-          <div id='brand'>
-            <p id='brand'>EXP|CON</p>
-          </div>
-          
-        </div>
-          
-        
-    </section>
+    <%- include ('./partials/footer.ejs') %>
     <footer id='footer'>2019 All Rights Reserved | Speer Technologies Incorporated</footer>
   </main>
   <script src="js/scripts.js"></script>
+  <script src='/static/css/helper.js'></script>
 </body>
 </html>

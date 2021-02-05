@@ -18,12 +18,13 @@ html {
   color:white;
   position:absolute;
   animation:ease-in;
-  transition: ease-in 4s;
-  z-index: 0;
+  transition: ease-in 10s;
+  -moz-animation-duration: 2s;
+  
   
 }
 #collapsible-btn{
-  z-index: 10;
+  
   height: 60px;
   width:fit-content;
   border-radius: 100%;
@@ -31,6 +32,14 @@ html {
   position: fixed;
   color:white;
   font-size: 40px;
+  animation-fill-mode: forwards;
+  -moz-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  behavior: smooth;
+  
+  
+  transition: 10s;
+  
 }
 
 .menu-txt {

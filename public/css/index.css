@@ -4,56 +4,7 @@ html {
 }
 /* Style the button that is used to open and close the collapsible content */
 
-@keyframes grow {
-  0% { font-size: 0; }
-  100% { font-size: 40px; }
-}
-#collapsible-menu{
-  display: none;
-  height: 330px;
-  width:330px;
-  border-radius : 100%;
-  background-color: black;
-  float:left;
-  color:white;
-  position:absolute;
-  animation:ease-in;
-  transition: ease-in 10s;
-  -moz-animation-duration: 2s;
-  
-  
-}
-#collapsible-btn{
-  
-  height: 60px;
-  width:fit-content;
-  border-radius: 100%;
-  background-color: transparent;
-  position: fixed;
-  color:white;
-  font-size: 40px;
-  animation-fill-mode: forwards;
-  -moz-animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-  behavior: smooth;
-  z-index: 5;
-  
-  transition: 10s;
-  
-}
 
-.menu-txt {
-  font-size: 24px;
-  font-weight: 600;
-  padding-left: 28%;
-  padding-top: 45%;
-  color:white;
-  text-transform:uppercase
-}
-
-#menu-color {
-  color: white;
-}
 
 
 
